@@ -8,6 +8,7 @@
 		{% csrf_token %}
 		{{ form.errors }}
 		{{ form.comment.label }}
+		<br>
 		{{ form.comment }}
 		<input id="id_user" name="user" value="{% if user.is_authenticated %}{{ user }}{% endif %}" hidden>
 		<input type="submit" value="Submit" />

@@ -11,6 +11,3 @@ class Comment(models.Model):
     likes_count = models.IntegerField(
         default=0,
         validators=[MinValueValidator(0)])
-    dislikes_count = models.IntegerField(
-        default=0,
-        validators=[MinValueValidator(0)])

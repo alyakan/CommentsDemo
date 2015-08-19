@@ -5,7 +5,7 @@ from django.core.validators import MinValueValidator
 
 # Create your models here.
 class Comment(models.Model):
-    user = models.ForeignKey(User, null=True)
+    user = models.ForeignKey(User, null=True, blank=True)
 
     comment = models.CharField(max_length=512)
     likes_count = models.IntegerField(
